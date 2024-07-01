@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Made by Igor Fazoli-->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="cssdositepersonal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <title>Minha vida em HTML</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secundary">
+    <div class="collapse navbar-collapse" id="textoNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="fotos-link" style="color: rgb(255, 255, 255);">Clique para ver fotos do lugar
+            onde
+            eu cresci</a>
+        </li>
+      </ul>
+      <span class="navbar-text" style="color: #ffffff">
+        Bem-vindo ao meu site!
+      </span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="gallery" id="gallery">
+      <img src="galeria1.jpg" alt="Image 1">
+      <img src="galeria2.jpg" alt="Image 2">
+      <img src="galeria3.jpg" alt="Image 3">
+      <img src="galeria4.jpg" alt="Image 4">
+      <img src="galeria5.jpg" alt="Image 5">
+      <img src="galeria6.jpg" alt="Image 6">
+      <img src="galeria7.jpg" alt="Image 7">
+      <img src="galeria8.jpg" alt="Image 8">
+      <img src="galeria9.jpg" alt="Image 9">
+      <img src="galeria10.jpg" alt="Image 10">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('fotos-link').addEventListener('click', function (event) {
+      event.preventDefault();
+      const gallery = document.getElementById('gallery');
+      if (gallery.style.display === 'none' || gallery.style.display === '') {
+        gallery.style.display = 'flex';
+      } else {
+        gallery.style.display = 'none';
+      }
+    });
+  </script>
+
+  <div class="container-fluid" style="color: #ffffff">
+    <h1>
+      <strong>Minha vida em HTML</strong>
+    </h1>
+
+    <h2>Um breve resumo da minha vida</h2>
+    <p>Eu nasci numa cidadezinha do interior do Paraná, <a href="https://g.co/kgs/B2R7sE2" target="_blank">Querência do
+        Norte</a>
+      em abril de 2005. Porém, sempre morei no sítio com meu pai, mãe, irmã até 2023. Sou uma pessoa que gosta de
+      conversar,
+      ama tecnologia mas também ama a natureza, sempre fui intenso e eclético, desde dirigir um trator até
+      desmontar um
+      computador, e sempre gostei disso.
+
+    <h3>O que eu faço atualmente e o que almejo </h3>
+
+    <p>Atualmente curso sistemas para internet na UTFPR e vivo em Toledo-PR, minha meta é usar esse curso como
+      pavimento para um dia fazer um curso e se tornar piloto e atuar na área.</p>
+
+    <div id="carouselExampleCaptions1" class="carousel slide small-carousel" data-bs-ride="carousel"
+      data-bs-interval="2000" data-bs-pause="hover">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="carr1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Toledo</h5>
+            <p>O lugar onde eu vivo :)</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carr2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Minha paixão, aviação</h5>
+            <p>Aeroporto de Guarulhos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="carr3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Aviação</h5>
+            <p>Uma paixão que vem de família, (este era o avião do meu tio)</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" style="color: #ffffff">
+    <h1>Aqui vão 3 séries e 3 filmes favoritos meus</h1>
+
+    <div id="carouselExampleCaptions2" class="carousel slide small-carousel" data-bs-ride="carousel"
+      data-bs-interval="2000" data-bs-pause="hover">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="serie1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Stranger Things</h5>
+            <p>Provavelmente minha série favorita.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="serie2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Supernatural</h5>
+            <p>Talvez uma das minhas séries favoritas.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="serie3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lupin</h5>
+            <p>Foi uma série diferente que eu amei</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="serie4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SUPERBAD é hoje</h5>
+            <p>Um filme que tirou muitas risadas minhas, perfeito!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="serie5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Interstellar</h5>
+            <p>Um filme simplesmente lindo, com embasamento científico.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="serie6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Top Gun</h5>
+            <p>Envolve uma das minhas paixões, aviação, um clássico.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

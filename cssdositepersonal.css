@@ -1,0 +1,112 @@
+/*Made by Igor Fazoli*/
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent !important;
+    border: none;
+}
+
+@font-face {
+    font-family: 'Fonte dos títulos';
+    src: url('NewYork\ PERSONAL\ USE.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#fotos-link {
+    font-size: 20px;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+body {
+    background-image: url(backtwo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 50%;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+.gallery {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 550px;
+    height: 550x;
+    object-fit: cover;
+}
+
+body h1 {
+    font-family: 'Fonte dos títulos';
+    color: rgb(255, 255, 255);
+}
+
+body h2 {
+    font-family: 'Fonte dos títulos';
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+body h3 {
+    font-family: 'Fonte dos títulos';
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: #424268
+}
+
+.navbar {
+    font-family: 'Fonte dos títulos';
+    color: white;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navbar-text {
+    display: inline-block;
+    margin-left: auto;
+
+}
+
+.navbar-text {
+    display: inline-block;
+    margin-right: 3mm;
+   
+}
+
+.small-carousel {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-container {
+    flex-grow: 1;
+}
